@@ -10,6 +10,12 @@ header, nav, section, footer {
     margin-bottom: 10px;
     width: 100%;
 }
+
+footer p {
+    width: 80%;
+    margin: auto;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -79,11 +85,6 @@ section ul li a {
 
 /*************Media Queries**************/
 
-@media screen and (max-width: 1000px) {
-    section img {
-        width: 80%;
-    }
-  }
 @media screen and (max-width: 700px) {
 
     header h1 {
