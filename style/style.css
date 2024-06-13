@@ -11,6 +11,25 @@ header, nav, section, footer {
     width: 100%;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+figure {
+    border: 1px #8f9697 solid;
+    padding: 4px;
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color: #b8862f;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+
 footer p {
     width: 80%;
     margin: auto;
@@ -35,6 +54,11 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #ddd;
 }
+
+.active {
+    background-color: #ddd;
+}
+
 section {
     min-height: 80vh; /* Set minimum height to 80% of viewport height */
 }
@@ -56,10 +80,21 @@ section ul li a {
 }
 
 
-.button {
+.button-orange {
     background-color: #b7852f;
     border: none;
     color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.button-yellow {
+    background-color: #f4ea2c;
+    border: none;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -70,6 +105,11 @@ section ul li a {
     background-color: #b7852f;
     border: none;
     color: white;
+  }
+  .khscoutsgirls-btn{
+    background-color: #f4ea2c;
+    border: none;
+    color: black;
   }
 
 .list {
