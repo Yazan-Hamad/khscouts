@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style/style.css"/>
-<link rel="stylesheet" type="text/css" href="style/fonts.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/fonts.css" />
     <title>مجموعة خالد بن الوليد الكشفية</title>
     <style>
-        div {
-            width: 80%;
-            margin: auto;
+             .leaders {
+                margin: auto;
+                width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 20px;
+            justify-items: center; /* Center the grid items */
         }
-        h3, div p {
-            text-align: start;
+        .leader {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            justify-self: center;
+        }
+        .leader img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        @media screen and (max-width: 800px) {
+            .leaders {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .leaders {
+                grid-template-columns: 1fr; /* 1 column for very small screens */
+            }
         }
     </style>
 </head>
+
 <body class="tajawal-regular">
     <header>
         <a href="index.html">
-            <img src="./images/logo.png" alt="Scouts Logo" style="width: 150px; height: 150px;">       
+            <img src="./images/logo.png" alt="Scouts Logo" style="width: 150px; height: 150px;">
             <h1>مجموعة خالد بن الوليد الكشفية - دولة الكويت</h1>
         </a>
     </header>
@@ -33,7 +62,9 @@
             <li><a href="registration.html">التسجيل</a></li>
             <li><a href="contact.html">تواصل معنا</a></li>
             <li><a class="khscoutsgirls-btn" href="girls/khscoutsgirls.html">مرشدات خالد بن الوليد</a></li>
-            <li><a class="waiting-list-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScfo983dRnTlis_LhgkBKuQwLzqsEijMX6fYzS4z6HvnYhZBQ/viewform">قائمة الانتظار </a></li>
+            <li><a class="waiting-list-btn" target="_blank"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScfo983dRnTlis_LhgkBKuQwLzqsEijMX6fYzS4z6HvnYhZBQ/viewform">قائمة
+                    الانتظار </a></li>
         </ul>
     </nav>
     <main>
@@ -48,19 +79,158 @@
             </ul>
         </nav>
         <section>
-            <h2>الفرق</h2>
-                <div>
-                    <h3>فرقة الأشبال</h3>
-                    <h3>فرقة الفتيان</h3>
-                    <h3>فرقة المتقدم</h3>
-                    <h3>فرقة الجوالة</h3>
-                    <h3>فرقة الزهرات</h3>
-                    <h3>فرقة المرشدات</h3>
-                </div>
+            <h2>قادة مجموعة خالد بن الوليد الكشفية</h2>
+            <div class="leaders">
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/alhawash.jpg" alt="صورة القائد محمد الحواش" >
+                        <figcaption>
+                            <h3>
+                                القائد/ محمد الحواش </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/alhobaishi.jpg" alt="صورة القائد عمر الحبيشي" style="object-position: -90px;">
+                        <figcaption>
+                            <h3>
+                                القائد/ عمر الحبيشي </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/alikilany.jpg" alt="صورة القائد علي الكيلاني" >
+                        <figcaption>
+                            <h3>
+                                القائد/ علي الكيلاني </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/alkhalousi.jpg" alt="صورة القائد أنس الخالوصي" style="object-position: -90px;">
+                        <figcaption>
+                            <h3>
+                                القائد/ أنس الخالوصي </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/alsamman.jpg" alt="صورة القائد أحمد السمان" >
+                        <figcaption>
+                            <h3>
+                                القائد/ أحمد السمان </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/altaib.jpg" alt="صورة القائد محمد أنس الطيب" style="object-position: -80px;">
+                        <figcaption>
+                            <h3>
+                                القائد/ محمد أنس الطيب </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/ayman.jpg" alt="صورة القائد محمد أيمن" style="object-position: -90px;">
+                        <figcaption>
+                            <h3>
+                                القائد/ محمد أيمن </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/baitamoni.jpg" alt="صورة القائد عبد الرحمن البيتموني" >
+                        <figcaption>
+                            <h3>
+                                القائد/ عبد الرحمن البيتموني </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/ghaleb.jpg" alt="صورة القائد عبد الله غالب" >
+                        <figcaption>
+                            <h3>
+                                القائد/ عبد الله غالب </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/haidar.jpg" alt="صورة القائد محمد حيدر" style="object-position: -80px;" >
+                        <figcaption>
+                            <h3>
+                                القائد/ محمد حيدر </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/ibrahim.jpeg" alt="صورة القائد إبراهيم خلف الله" style="object-position: 0px -110px;" >
+                        <figcaption>
+                            <h3>
+                                القائد/ إبراهيم خلف الله </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/mamdouh.jpg" alt="صورة القائد ممدوح العابد"  style="object-fit: contain;">
+                        <figcaption>
+                            <h3>
+                                القائد/ ممدوح العابد </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/mohammadkilany.jpg" alt="صورة القائد محمد سفيان الكيلاني" >
+                        <figcaption>
+                            <h3>
+                                القائد/ محمد سفيان الكيلاني </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/obaidah.jpg" alt="صورة القائد عبيدة حتاملة" >
+                        <figcaption>
+                            <h3>
+                                القائد/ عبيدة حتاملة </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/omarkilany.jpg" alt="صورة القائد عمر سفيان الكيلاني" >
+                        <figcaption>
+                            <h3>
+                                القائد/ عمر سفيان الكيلاني </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/saeed.jpg" alt="صورة القائد سعيد الصليعي" >
+                        <figcaption>
+                            <h3>
+                                القائد/ سعيد الصليعي </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/yazan.jpg" alt="صورة القائد يزن حمد" style="object-position: -60px;">
+                        <figcaption>
+                            <h3>
+                                القائد/ يزن حمد </h3>
+                        </figcaption>
+                    </figure></div>
+                    <div class="leader">
+                    <figure>
+                        <img src="images/leaders/yousefalnajjar.jpg" alt="صورة القائد يوسف النجار" style="object-position: -85px;">
+                        <figcaption>
+                            <h3>
+                                القائد/ يوسف النجار </h3>
+                        </figcaption>
+                    </figure></div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 مجموعة خالد بن الوليد الكشفية. جميع الحقوق محفوظة.</p>
+        <h3>&copy; 2024 مجموعة خالد بن الوليد الكشفية. جميع الحقوق محفوظة.</h3>
     </footer>
 </body>
+
 </html>
