@@ -18,9 +18,9 @@
   /* LEVEL-1 STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .level-1 {
-    width: 50%;
+    width: fit-content;
     margin: 0 auto 40px;
-    background: var(--level-1);
+    /* background: var(--level-1); */
   }
   .level-1::before {
     content: "";
@@ -75,9 +75,8 @@
     background: var(--black);
   }
   .level-2 {
-    width: 70%;
+    width: fit-content;
     margin: 0 auto 40px;
-    background: var(--level-2);
   }
   .level-2::before {
     content: "";
@@ -108,7 +107,7 @@
   .level-3-wrapper {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 20px;
     width: 90%;
     margin: 0 auto;
@@ -134,15 +133,15 @@
     background: var(--black);
   }
   .level-3 {
+    width: fit-content;
     margin-bottom: 20px;
-    background: var(--level-3);
   }
   
   /* LEVEL-4 STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .level-4-wrapper {
     position: relative;
-    width: 80%;
+    width: 40%;
     margin-left: auto;
   }
   .level-4-wrapper::before {
@@ -159,13 +158,12 @@
   }
   .level-4 {
     font-weight: normal;
-    background: var(--level-4);
   }
   .level-4::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 8%;
     -webkit-transform: translate(-100%, -50%);
             transform: translate(-100%, -50%);
     width: 20px;
