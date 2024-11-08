@@ -136,6 +136,40 @@
     width: fit-content;
     margin-bottom: 20px;
   }
+  /* LEVEL-3b STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .level-3b-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .level-3b-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: calc(25% - 5px);
+    width: calc(50% + 10px);
+    height: 2px;
+    background: var(--black);
+  }
+  .level-3b-wrapper > li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  }
+  .level-3b {
+    width: fit-content;
+    margin-bottom: 20px;
+  }
   
   /* LEVEL-4 STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
